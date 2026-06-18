@@ -61,19 +61,11 @@ function Navbar() {
             <ShoppingCart size={20} />
           </Link>
 
-          <Link
-            to="/login"
-            className="rounded-full border border-white px-5 py-2 text-sm font-medium transition hover:bg-white hover:text-[#6f2d1f]"
+          <button
+            className="rounded-full bg-yellow-400 px-6 py-2.5 text-sm font-semibold text-black transition hover:bg-yellow-300"
           >
-            Login
-          </Link>
-
-          <Link
-            to="/signup"
-            className="rounded-full bg-yellow-400 px-5 py-2 text-sm font-semibold text-black transition hover:bg-yellow-300"
-          >
-            Sign Up
-          </Link>
+            Order Now
+          </button>
         </div>
 
         <button
