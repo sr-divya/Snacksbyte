@@ -1,9 +1,18 @@
 import { Link } from "react-router-dom";
 import { Search, ShoppingCart, Heart, Menu, X } from "lucide-react";
 import { useState } from "react";
+import { useCart } from "../context/CartContext";
+import { useWishlist } from "../context/WishlistContext";
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
+  const { cart } = useCart();
+  const { wishlist } = useWishlist();
+
+  const totalItems = cart.reduce(
+    (total, item) => total + item.quantity,
+    0
+  );
 
   const navLinks = [
     { name: "Home", path: "/" },
@@ -49,16 +58,28 @@ function Navbar() {
 
           <Link
             to="/wishlist"
-            className="transition hover:text-yellow-300"
+            className="relative transition hover:text-yellow-300"
           >
-            <Heart size={20} />
+            <Heart size={22} />
+
+            {wishlist.length > 0 && (
+              <span className="absolute -right-2 -top-2 flex h-5 w-5 items-center justify-center rounded-full bg-red-500 text-xs text-white">
+                {wishlist.length}
+              </span>
+            )}
           </Link>
 
           <Link
             to="/cart"
-            className="transition hover:text-yellow-300"
+            className="relative transition hover:text-yellow-300"
           >
-            <ShoppingCart size={20} />
+            <ShoppingCart size={22} />
+
+            {totalItems > 0 && (
+              <span className="absolute -right-2 -top-2 flex h-5 w-5 items-center justify-center rounded-full bg-red-500 text-xs text-white">
+                {totalItems}
+              </span>
+            )}
           </Link>
 
           <button
