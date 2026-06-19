@@ -18,7 +18,6 @@ function Navbar() {
     { name: "Home", path: "/" },
     { name: "Products", path: "/products" },
     { name: "Categories", path: "/products" },
-    { name: "About", path: "/about" },
     { name: "Contact", path: "/contact" },
   ];
 
@@ -82,11 +81,12 @@ function Navbar() {
             )}
           </Link>
 
-          <button
+          <Link
+            to="/products"
             className="rounded-full bg-yellow-400 px-6 py-2.5 text-sm font-semibold text-black transition hover:bg-yellow-300"
           >
-            Order Now
-          </button>
+            Shop Now
+          </Link>
         </div>
 
         <button
@@ -112,21 +112,7 @@ function Navbar() {
               </li>
             ))}
 
-            <div className="flex gap-3 pt-4">
-              <Link
-                to="/login"
-                className="flex-1 rounded-lg border border-white px-4 py-2 text-center"
-              >
-                Login
-              </Link>
 
-              <Link
-                to="/signup"
-                className="flex-1 rounded-lg bg-yellow-400 px-4 py-2 text-center font-medium text-black"
-              >
-                Sign Up
-              </Link>
-            </div>
           </ul>
         </div>
       )}
