@@ -4,6 +4,7 @@ const products = [
     name: "Chocolate Crunch",
     category: "Chocolate",
     price: 299,
+    brand: "Snackify",
     image: "/src/assets/images/chocolate_crunch.jpg",
   },
   {
@@ -18,6 +19,7 @@ const products = [
     name: "Nutty Delight",
     category: "Nuts",
     price: 349,
+    brand: "Snackify",
     image: "/src/assets/images/nutty_delight.jpg",
   },
   {
@@ -31,6 +33,7 @@ const products = [
     id: 5,
     name: "Dark Cocoa Mix",
     category: "Chocolate",
+    brand: "Snackify",
     price: 279,
     image: "/src/assets/images/dark_cocoa.jpg",
   },

@@ -89,12 +89,43 @@ function Navbar() {
           </Link>
         </div>
 
-        <button
-          onClick={() => setIsOpen(!isOpen)}
-          className="lg:hidden"
-        >
-          {isOpen ? <X size={24} /> : <Menu size={24} />}
-        </button>
+        <div className="flex items-center gap-4 lg:hidden">
+          <Link
+            to="/wishlist"
+            className="relative"
+          >
+            <Heart size={22} />
+
+            {wishlist.length > 0 && (
+              <span className="absolute -right-2 -top-2 flex h-5 w-5 items-center justify-center rounded-full bg-red-500 text-xs text-white">
+                {wishlist.length}
+              </span>
+            )}
+          </Link>
+
+          <Link
+            to="/cart"
+            className="relative"
+          >
+            <ShoppingCart size={22} />
+
+            {totalItems > 0 && (
+              <span className="absolute -right-2 -top-2 flex h-5 w-5 items-center justify-center rounded-full bg-red-500 text-xs text-white">
+                {totalItems}
+              </span>
+            )}
+          </Link>
+
+          <button
+            onClick={() => setIsOpen(!isOpen)}
+          >
+            {isOpen ? (
+              <X size={24} />
+            ) : (
+              <Menu size={24} />
+            )}
+          </button>
+        </div>
       </nav>
 
       {isOpen && (
