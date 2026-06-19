@@ -1,6 +1,8 @@
 import lays from "../assets/images/lays.jpg";
+import { useNavigate } from "react-router-dom";
 
 function HeroBanner() {
+  const navigate = useNavigate();
   return (
     <section className="bg-[#f8f3ed]">
       <div className="mx-auto flex max-w-7xl flex-col items-center gap-12 px-6 py-16 lg:flex-row lg:py-24">
@@ -22,11 +24,17 @@ function HeroBanner() {
           </p>
 
           <div className="flex flex-col gap-4 sm:flex-row">
-            <button className="rounded-full bg-[#6f2d1f] px-8 py-4 font-semibold text-white transition hover:bg-[#5a2418]">
+            <button
+              onClick={() => navigate("/products")}
+              className="rounded-full bg-[#6f2d1f] px-8 py-4 font-semibold text-white transition hover:bg-[#5a2418]"
+            >
               Shop Now
             </button>
 
-            <button className="rounded-full border border-[#6f2d1f] px-8 py-4 font-semibold text-[#6f2d1f] transition hover:bg-[#6f2d1f] hover:text-white">
+            <button
+              onClick={() => navigate("/products")}
+              className="rounded-full border border-[#6f2d1f] px-8 py-4 font-semibold text-[#6f2d1f] transition hover:bg-[#6f2d1f] hover:text-white"
+            >
               Explore Flavors
             </button>
           </div>
