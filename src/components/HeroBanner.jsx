@@ -32,7 +32,7 @@ function HeroBanner() {
             </button>
 
             <button
-              onClick={() => navigate("/products")}
+              onClick={() => navigate("/flavors")}
               className="rounded-full border border-[#6f2d1f] px-8 py-4 font-semibold text-[#6f2d1f] transition hover:bg-[#6f2d1f] hover:text-white"
             >
               Explore Flavors
