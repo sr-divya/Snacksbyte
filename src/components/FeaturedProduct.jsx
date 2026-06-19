@@ -1,10 +1,12 @@
+import dark_chocolate from "../assets/images/dark-chocolate.jpg";
+
 function FeaturedProduct() {
   return (
     <section className="bg-[#f8f3ed] py-20">
       <div className="mx-auto flex max-w-7xl flex-col items-center gap-12 px-6 lg:flex-row">
         <div className="flex-1">
           <img
-            src="/src/assets/images/dark-chocolate.jpg"
+            src={dark_chocolate}
             alt="Featured Product"
             className="mx-auto h-[450px] w-[450px] object-contain"
           />

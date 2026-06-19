@@ -1,4 +1,7 @@
 import ReviewCard from "./ReviewCard";
+import chocolate from "../assets/images/chocolate.jpg";
+import biscuit from "../assets/images/biscuit.jpg";
+import ice_cream from "../assets/images/ice-cream.jpg";
 
 function ReviewsSection() {
   const reviews = [
@@ -6,7 +9,7 @@ function ReviewsSection() {
       id: 1,
       name: "Priya Sharma",
       role: "Fitness Enthusiast",
-      image: "/src/assets/images/chocolate.jpg",
+      image: chocolate,
       review:
         "These snacks have become part of my daily routine. Great taste and they keep me full for hours.",
     },
@@ -14,7 +17,7 @@ function ReviewsSection() {
       id: 2,
       name: "Rahul Verma",
       role: "Software Engineer",
-      image: "/src/assets/images/biscuit.jpg",
+      image: biscuit,
       review:
         "Perfect for work breaks. The quality is amazing and the flavors are genuinely addictive.",
     },
@@ -22,7 +25,7 @@ function ReviewsSection() {
       id: 3,
       name: "Aditi Singh",
       role: "Nutrition Coach",
-      image: "/src/assets/images/ice-cream.jpg",
+      image: ice_cream,
       review:
         "A healthy alternative to traditional snacks. Clean ingredients and excellent nutritional value.",
     },

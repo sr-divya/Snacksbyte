@@ -1,3 +1,5 @@
+import lays from "../assets/images/lays.jpg";
+
 function HeroBanner() {
   return (
     <section className="bg-[#f8f3ed]">
@@ -32,7 +34,7 @@ function HeroBanner() {
 
         <div className="flex flex-1 justify-center">
           <img
-            src="/src/assets/images/lays.jpg"
+            src={lays}
             alt="Healthy snacks"
             className="h-[300px] w-[300px] md:h-[400px] md:w-[400px] lg:h-[500px] lg:w-[500px]object-contain"
           />

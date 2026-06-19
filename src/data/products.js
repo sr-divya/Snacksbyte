@@ -1,3 +1,11 @@
+import chocolate_crunch from "../assets/images/chocolate_crunch.jpg";
+import berry_blast from "../assets/images/berry_blast.jpg";
+import nutty_delight from "../assets/images/nutty_delight.jpg";
+import protein_bites from "../assets/images/protein_bites.jpg";
+import dark_cocoa from "../assets/images/dark_cocoa.jpg";
+import dry_fruit_energybar from "../assets/images/dry_fruit_energybar.jpg";
+
+
 const products = [
   {
     id: 1,
@@ -5,14 +13,14 @@ const products = [
     category: "Chocolate",
     price: 299,
     brand: "Snackify",
-    image: "/src/assets/images/chocolate_crunch.jpg",
+    image: chocolate_crunch,
   },
   {
     id: 2,
     name: "Berry Blast",
     category: "Fruit",
     price: 249,
-    image: "/src/assets/images/berry_blast.jpg",
+    image: berry_blast,
   },
   {
     id: 3,
@@ -20,14 +28,14 @@ const products = [
     category: "Nuts",
     price: 349,
     brand: "Snackify",
-    image: "/src/assets/images/nutty_delight.jpg",
+    image: nutty_delight,
   },
   {
     id: 4,
     name: "Protein Bites",
     category: "Protein",
     price: 399,
-    image: "/src/assets/images/protein_bites.jpg",
+    image: protein_bites,
   },
   {
     id: 5,
@@ -35,14 +43,14 @@ const products = [
     category: "Chocolate",
     brand: "Snackify",
     price: 279,
-    image: "/src/assets/images/dark_cocoa.jpg",
+    image: dark_cocoa,
   },
   {
     id: 6,
     name: "Dry Fruit Energy Bar",
     category: "Nuts",
     price: 329,
-    image: "/src/assets/images/dry_fruit_energybar.jpg",
+    image: dry_fruit_energybar,
   },
 ];
 

@@ -9,10 +9,14 @@ import IngredientSection from './components/IngredientSection'
 import ReviewsSection from './components/ReviewsSection'
 import Footer from './components/Footer'
 import AppRoutes from './routes/AppRoutes'
+import cold_drink from "./assets/images/cold-drink.jpg";
+import cold_coffee from "./assets/images/cold-coffee.jpg";
+import ice_cream from "./assets/images/ice-cream.jpg";
+import chocolate from "./assets/images/chocolate.jpg";
 
 const Home = () => {
   return (
-    // <BrowserRouter>
+
       <div>
         <Navbar />
         <HeroBanner />
@@ -22,19 +26,19 @@ const Home = () => {
           </h2>
           <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4">
             <FlavourCard
-              image="/src/assets/images/cold-drink.jpg"
+              image={cold_drink}
               title="Cold Drink"
             />
             <FlavourCard
-              image="/src/assets/images/cold-coffee.jpg"
+              image={cold_coffee}
               title="Cold Coffee"
             />
             <FlavourCard
-              image="/src/assets/images/ice-cream.jpg"
+              image={ice_cream}
               title="Ice Cream"
             />
             <FlavourCard
-              image="/src/assets/images/chocolate.jpg"
+              image={chocolate}
               title="Chocolates"
             />
           </div>
@@ -45,8 +49,6 @@ const Home = () => {
         <ReviewsSection />
         <Footer />
       </div>
-
-    // </BrowserRouter>
   )
 }
 
